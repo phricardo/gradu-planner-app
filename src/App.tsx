@@ -1,11 +1,19 @@
 import { ChangeEvent, useEffect, useMemo, useRef, useState } from 'react';
-import { Check, CheckCircle2, Download, FileUp, GraduationCap, Lightbulb, Search, Trash2 } from 'lucide-react';
+import { Check, CheckCircle2, Download, FileUp, GraduationCap, Lightbulb, Link2, Search, Trash2 } from 'lucide-react';
 import { getTermInfo } from './academicCalendar';
 import { FLOWCHARTS } from './data';
 import { displayText } from './text';
 import { forecastGraduation, getDisciplineSuggestions, getEligibility, getProgressSummary } from './progress';
 import { findStudentByRegistration } from './students';
-import { buildExportPayload, createDefaultState, loadState, parseImportPayload, saveState } from './storage';
+import {
+  buildExportPayload,
+  buildShareUrl,
+  createDefaultState,
+  loadState,
+  parseImportPayload,
+  parseSharedStateFromLocation,
+  saveState,
+} from './storage';
 import type { Discipline, FlowYear, PlannerState } from './types';
 import WhatsAppIcon from './WhatsAppIcon';
 import styles from './App.module.css';
@@ -24,8 +32,12 @@ function fileNameForExport() {
 }
 
 export default function App() {
-  const [state, setState] = useState<PlannerState>(() => loadState());
-  const [message, setMessage] = useState('');
+  const [initialSharedState] = useState(() => parseSharedStateFromLocation());
+  const [state, setState] = useState<PlannerState>(() => initialSharedState.state ?? loadState());
+  const [message, setMessage] = useState(() => {
+    if (initialSharedState.state) return 'Planejamento compartilhado carregado com sucesso.';
+    return initialSharedState.error ?? '';
+  });
   const importInputRef = useRef<HTMLInputElement>(null);
 
   const flowchart = FLOWCHARTS[state.selectedFlowYear];
@@ -40,6 +52,14 @@ export default function App() {
   const progress = useMemo(() => getProgressSummary(flowchart, state.completedDisciplines), [flowchart, state.completedDisciplines]);
   const forecast = useMemo(() => forecastGraduation(flowchart, state, plannedTerm), [flowchart, state, plannedTerm]);
   const suggestions = useMemo(() => getDisciplineSuggestions(flowchart, state, plannedTerm).slice(0, 5), [flowchart, state, plannedTerm]);
+
+  useEffect(() => {
+    if (!initialSharedState.found) return;
+
+    const url = new URL(window.location.href);
+    url.hash = '';
+    window.history.replaceState(null, '', url.toString());
+  }, [initialSharedState.found]);
 
   useEffect(() => {
     saveState(state);
@@ -183,6 +203,18 @@ export default function App() {
     URL.revokeObjectURL(href);
   }
 
+  async function handleCopyShareLink() {
+    const shareUrl = buildShareUrl(state);
+
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      setMessage('Link de planejamento copiado.');
+    } catch {
+      window.location.hash = new URL(shareUrl).hash;
+      setMessage('Nao foi possivel copiar automaticamente. Copie o link pela barra de enderecos.');
+    }
+  }
+
   async function handleImport(event: ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
     event.target.value = '';
@@ -210,12 +242,13 @@ export default function App() {
 
   function buildWhatsAppShareText() {
     const baseText = `Minha previsão no GraduPlanner: estou com ${progress.percentage}% do curso concluído (${progress.completed}/${progress.total} disciplinas) na matriz ${state.selectedFlowYear}.`;
+    const shareUrl = buildShareUrl(state);
 
     if (forecast.term) {
-      return `${baseText} Previsão de formatura: ${forecast.term}.`;
+      return `${baseText} Previsão de formatura: ${forecast.term}. Link: ${shareUrl}`;
     }
 
-    return `${baseText} A previsão ainda está indisponível: ${forecast.unavailableReason ?? 'sem motivo informado'}.`;
+    return `${baseText} A previsão ainda está indisponível: ${forecast.unavailableReason ?? 'sem motivo informado'}. Link: ${shareUrl}`;
   }
 
   function handleShareForecast() {
@@ -232,6 +265,10 @@ export default function App() {
           <p className={styles.subtitle}>Planejamento para o Bacharelado em Sistemas de Informação.</p>
         </div>
         <div className={styles.actions}>
+          <button type="button" className={styles.iconButton} onClick={handleCopyShareLink} title="Copiar link compartilhável">
+            <Link2 size={18} />
+            Copiar link
+          </button>
           <button type="button" className={styles.iconButton} onClick={handleExport} title="Exportar progresso">
             <Download size={18} />
             Exportar
