@@ -1,0 +1,1167 @@
+{
+  "schema_version": "1.0.0",
+  "source": {
+    "arquivo": "Fluxograma-SISINF.NF-2019.1(1).pdf",
+    "instituicao": "CEFET/RJ - Campus Nova Friburgo",
+    "curso": "Bacharelado em Sistemas de Informação",
+    "matriz": "Fluxograma 2019.1",
+    "observacao_extracao": "Dependências extraídas visualmente do fluxograma do PDF. Setas tracejadas, cruzamentos e linhas longas foram marcadas com confidence 'media_visual' quando a leitura visual não estava 100% nítida. A estrutura segue o mesmo padrão do JSON gerado para a matriz 2022.1."
+  },
+  "regras_curriculares": {
+    "horas_obrigatorias_aula": 3258,
+    "horas_obrigatorias_relogio": 2715,
+    "horas_optativas_aula": 342,
+    "horas_optativas_relogio": 285,
+    "horas_atividades_complementares": 100,
+    "total_horas_curso": 3100,
+    "total_creditos_curso": 182,
+    "prazo_maximo_integralizacao_semestres": 14,
+    "optativas": {
+      "carga_horaria_total_aula": 342,
+      "observacao": "O aluno deve cumprir uma carga horária total de 342 horas de disciplinas Optativas."
+    }
+  },
+  "periodos": {
+    "1": [
+      "gsi9101nf",
+      "gsi9102nf",
+      "gsi9106nf",
+      "gsi9104nf",
+      "gsi9107nf",
+      "gsi9105nf",
+      "gsi9103nf"
+    ],
+    "2": [
+      "gsi9201nf",
+      "gsi9202nf",
+      "gsi9204nf",
+      "gsi9203nf",
+      "gsi9205nf",
+      "gsi9206nf"
+    ],
+    "3": [
+      "gsis9301nf",
+      "gsi9302nf",
+      "gs9305nf",
+      "gsi9506nf",
+      "gsi9303nf"
+    ],
+    "4": [
+      "gsi9401nf",
+      "gsi9403nf",
+      "gsi9406nf",
+      "gsi9407nf",
+      "gsi9404nf",
+      "gsi9304nf",
+      "gsi9402nf"
+    ],
+    "5": [
+      "gsi9501nf",
+      "gsi9502nf",
+      "gsi9405nf",
+      "gsi9505nf",
+      "gsi9503nf",
+      "gsi9704nf",
+      "optativa_1"
+    ],
+    "6": [
+      "gsi9601nf",
+      "gsi9602nf",
+      "gsi9604nf",
+      "gsi9504nf",
+      "gsi9605nf"
+    ],
+    "7": [
+      "gsi9701nf",
+      "gsi9702nf",
+      "gsi9703nf",
+      "gsi9705nf",
+      "gsi9603nf",
+      "gsi9706nf",
+      "optativa_2"
+    ],
+    "8": [
+      "gsi9801nf",
+      "optativa_4",
+      "gsi9803nf",
+      "gsi9804nf",
+      "optativa_3",
+      "gsi9802nf"
+    ]
+  },
+  "disciplinas": {
+    "gsi9101nf": {
+      "id": "gsi9101nf",
+      "codigo": "GSI9101NF",
+      "nome": "Construção de Algoritmos",
+      "periodo": 1,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9201nf"
+      ]
+    },
+    "gsi9102nf": {
+      "id": "gsi9102nf",
+      "codigo": "GSI9102NF",
+      "nome": "Arquitetura de Computadores",
+      "periodo": 1,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9202nf"
+      ]
+    },
+    "gsi9106nf": {
+      "id": "gsi9106nf",
+      "codigo": "GSI9106NF",
+      "nome": "Fundamentos de Administração",
+      "periodo": 1,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9204nf"
+      ]
+    },
+    "gsi9104nf": {
+      "id": "gsi9104nf",
+      "codigo": "GSI9104NF",
+      "nome": "Gestão de Processos de Negócios",
+      "periodo": 1,
+      "creditos": 3,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9203nf"
+      ]
+    },
+    "gsi9107nf": {
+      "id": "gsi9107nf",
+      "codigo": "GSI9107NF",
+      "nome": "Fundamentos da Matemática",
+      "periodo": 1,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9205nf"
+      ]
+    },
+    "gsi9105nf": {
+      "id": "gsi9105nf",
+      "codigo": "GSI9105NF",
+      "nome": "Matemática Discreta",
+      "periodo": 1,
+      "creditos": 6,
+      "carga_horaria_aula": 108,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9402nf"
+      ]
+    },
+    "gsi9103nf": {
+      "id": "gsi9103nf",
+      "codigo": "GSI9103NF",
+      "nome": "Fundamentos de Sistemas de Informação",
+      "periodo": 1,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9201nf": {
+      "id": "gsi9201nf",
+      "codigo": "GSI9201NF",
+      "nome": "Programação Estruturada",
+      "periodo": 2,
+      "creditos": 5,
+      "carga_horaria_aula": 108,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9101nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsis9301nf",
+        "gsi9303nf"
+      ]
+    },
+    "gsi9202nf": {
+      "id": "gsi9202nf",
+      "codigo": "GSI9202NF",
+      "nome": "Fundamentos de Redes",
+      "periodo": 2,
+      "creditos": 5,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9102nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9302nf"
+      ]
+    },
+    "gsi9204nf": {
+      "id": "gsi9204nf",
+      "codigo": "GSI9204NF",
+      "nome": "Modelagem de Dados",
+      "periodo": 2,
+      "creditos": 4,
+      "carga_horaria_aula": 72,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9106nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gs9305nf"
+      ]
+    },
+    "gsi9203nf": {
+      "id": "gsi9203nf",
+      "codigo": "GSI9203NF",
+      "nome": "Engenharia de Requisitos",
+      "periodo": 2,
+      "creditos": 3,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9104nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9404nf",
+        "gsi9304nf"
+      ]
+    },
+    "gsi9205nf": {
+      "id": "gsi9205nf",
+      "codigo": "GSI9205NF",
+      "nome": "Cálculo Diferencial e Integral",
+      "periodo": 2,
+      "creditos": 5,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9107nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9506nf",
+        "gsi9704nf"
+      ]
+    },
+    "gsi9206nf": {
+      "id": "gsi9206nf",
+      "codigo": "GSI9206NF",
+      "nome": "Metodologia da Pesquisa Científica",
+      "periodo": 2,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsis9301nf": {
+      "id": "gsis9301nf",
+      "codigo": "GSIS9301NF",
+      "nome": "Programação Orientada a Objetos",
+      "periodo": 3,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9201nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9401nf"
+      ]
+    },
+    "gsi9302nf": {
+      "id": "gsi9302nf",
+      "codigo": "GSI9302NF",
+      "nome": "Fundamentos da Web",
+      "periodo": 3,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9202nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9401nf",
+        "gsi9403nf"
+      ]
+    },
+    "gs9305nf": {
+      "id": "gs9305nf",
+      "codigo": "GS9305NF",
+      "nome": "Banco de Dados I",
+      "periodo": 3,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9204nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9406nf"
+      ]
+    },
+    "gsi9506nf": {
+      "id": "gsi9506nf",
+      "codigo": "GSI9506NF",
+      "nome": "Álgebra Linear",
+      "periodo": 3,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9205nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9303nf": {
+      "id": "gsi9303nf",
+      "codigo": "GSI9303NF",
+      "nome": "Algoritmos e Estrutura de Dados",
+      "periodo": 3,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9201nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9403nf",
+        "gsi9402nf",
+        "gsi9601nf"
+      ]
+    },
+    "gsi9401nf": {
+      "id": "gsi9401nf",
+      "codigo": "GSI9401NF",
+      "nome": "Programação de Aplicações Corporativas",
+      "periodo": 4,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsis9301nf",
+        "gsi9302nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9501nf"
+      ]
+    },
+    "gsi9403nf": {
+      "id": "gsi9403nf",
+      "codigo": "GSI9403NF",
+      "nome": "Sistemas Operacionais",
+      "periodo": 4,
+      "creditos": 3,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9302nf",
+        "gsi9303nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9502nf",
+        "gsi9601nf"
+      ]
+    },
+    "gsi9406nf": {
+      "id": "gsi9406nf",
+      "codigo": "GSI9406NF",
+      "nome": "Banco de Dados II",
+      "periodo": 4,
+      "creditos": 3,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [
+        "gs9305nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9407nf",
+        "gsi9405nf"
+      ]
+    },
+    "gsi9407nf": {
+      "id": "gsi9407nf",
+      "codigo": "GSI9407NF",
+      "nome": "Administração de Banco de Dados",
+      "periodo": 4,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9406nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9505nf"
+      ]
+    },
+    "gsi9404nf": {
+      "id": "gsi9404nf",
+      "codigo": "GSI9404NF",
+      "nome": "Engenharia de Software",
+      "periodo": 4,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9203nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9503nf"
+      ]
+    },
+    "gsi9304nf": {
+      "id": "gsi9304nf",
+      "codigo": "GSI9304NF",
+      "nome": "Análise e Projetos de Sistemas",
+      "periodo": 4,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9203nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9405nf"
+      ]
+    },
+    "gsi9402nf": {
+      "id": "gsi9402nf",
+      "codigo": "GSI9402NF",
+      "nome": "Algoritmos em Grafos",
+      "periodo": 4,
+      "creditos": 5,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9303nf",
+        "gsi9105nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9501nf": {
+      "id": "gsi9501nf",
+      "codigo": "GSI9501NF",
+      "nome": "Programação para Web",
+      "periodo": 5,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9401nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9502nf": {
+      "id": "gsi9502nf",
+      "codigo": "GSI9502NF",
+      "nome": "Administração de Redes",
+      "periodo": 5,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9403nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9602nf"
+      ]
+    },
+    "gsi9405nf": {
+      "id": "gsi9405nf",
+      "codigo": "GSI9405NF",
+      "nome": "Projeto e Arquitetura de Software",
+      "periodo": 5,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9304nf",
+        "gsi9406nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9504nf"
+      ]
+    },
+    "gsi9505nf": {
+      "id": "gsi9505nf",
+      "codigo": "GSI9505NF",
+      "nome": "Gestão do Conhecimento da Informação",
+      "periodo": 5,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9407nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9503nf": {
+      "id": "gsi9503nf",
+      "codigo": "GSI9503NF",
+      "nome": "Qualidade de Software",
+      "periodo": 5,
+      "creditos": 3,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9404nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9504nf"
+      ]
+    },
+    "gsi9704nf": {
+      "id": "gsi9704nf",
+      "codigo": "GSI9704NF",
+      "nome": "Probabilidade e Estatística",
+      "periodo": 5,
+      "creditos": 5,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9205nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "optativa_1": {
+      "id": "optativa_1",
+      "codigo": null,
+      "nome": "Optativa I",
+      "periodo": 5,
+      "creditos": 5,
+      "carga_horaria_aula": 90,
+      "obrigatoria": false,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9601nf": {
+      "id": "gsi9601nf",
+      "codigo": "GSI9601NF",
+      "nome": "Programação Paralela e Concorrente",
+      "periodo": 6,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9403nf",
+        "gsi9303nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9602nf": {
+      "id": "gsi9602nf",
+      "codigo": "GSI9602NF",
+      "nome": "Segurança e Auditoria de Sistemas",
+      "periodo": 6,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9502nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9604nf": {
+      "id": "gsi9604nf",
+      "codigo": "GSI9604NF",
+      "nome": "Programação de Clientes Web",
+      "periodo": 6,
+      "creditos": 2,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9702nf",
+        "gsi9603nf"
+      ]
+    },
+    "gsi9504nf": {
+      "id": "gsi9504nf",
+      "codigo": "GSI9504NF",
+      "nome": "Teste e Manutenção de Software",
+      "periodo": 6,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9503nf",
+        "gsi9405nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9603nf"
+      ]
+    },
+    "gsi9605nf": {
+      "id": "gsi9605nf",
+      "codigo": "GSI9605NF",
+      "nome": "Empreendedorismo Digital",
+      "periodo": 6,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9603nf"
+      ]
+    },
+    "gsi9701nf": {
+      "id": "gsi9701nf",
+      "codigo": "GSI9701NF",
+      "nome": "Gestão de Projetos de Tecnologia da Informação",
+      "periodo": 7,
+      "creditos": 3,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9801nf"
+      ]
+    },
+    "gsi9702nf": {
+      "id": "gsi9702nf",
+      "codigo": "GSI9702NF",
+      "nome": "Interação Humano-Computador",
+      "periodo": 7,
+      "creditos": 3,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9604nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9703nf": {
+      "id": "gsi9703nf",
+      "codigo": "GSI9703NF",
+      "nome": "Tecnologias Sustentáveis",
+      "periodo": 7,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9705nf": {
+      "id": "gsi9705nf",
+      "codigo": "GSI9705NF",
+      "nome": "Ética",
+      "periodo": 7,
+      "creditos": 2,
+      "carga_horaria_aula": 36,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9603nf": {
+      "id": "gsi9603nf",
+      "codigo": "GSI9603NF",
+      "nome": "Projeto Integrador de Sistemas",
+      "periodo": 7,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9604nf",
+        "gsi9504nf",
+        "gsi9605nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9706nf": {
+      "id": "gsi9706nf",
+      "codigo": "GSI9706NF",
+      "nome": "Projeto Final I",
+      "periodo": 7,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": [
+        "gsi9804nf"
+      ]
+    },
+    "optativa_2": {
+      "id": "optativa_2",
+      "codigo": null,
+      "nome": "Optativa II",
+      "periodo": 7,
+      "creditos": 5,
+      "carga_horaria_aula": 90,
+      "obrigatoria": false,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9801nf": {
+      "id": "gsi9801nf",
+      "codigo": "GSI9801NF",
+      "nome": "Governança de TI",
+      "periodo": 8,
+      "creditos": 5,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9701nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "optativa_4": {
+      "id": "optativa_4",
+      "codigo": null,
+      "nome": "Optativa IV",
+      "periodo": 8,
+      "creditos": 4,
+      "carga_horaria_aula": 72,
+      "obrigatoria": false,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9803nf": {
+      "id": "gsi9803nf",
+      "codigo": "GSI9803NF",
+      "nome": "Legislação e Propriedade Intelectual",
+      "periodo": 8,
+      "creditos": 3,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9804nf": {
+      "id": "gsi9804nf",
+      "codigo": "GSI9804NF",
+      "nome": "Projeto Final II",
+      "periodo": 8,
+      "creditos": 4,
+      "carga_horaria_aula": 90,
+      "obrigatoria": true,
+      "prereq": [
+        "gsi9706nf"
+      ],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "optativa_3": {
+      "id": "optativa_3",
+      "codigo": null,
+      "nome": "Optativa III",
+      "periodo": 8,
+      "creditos": 5,
+      "carga_horaria_aula": 90,
+      "obrigatoria": false,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    },
+    "gsi9802nf": {
+      "id": "gsi9802nf",
+      "codigo": "GSI9802NF",
+      "nome": "Economia",
+      "periodo": 8,
+      "creditos": 3,
+      "carga_horaria_aula": 54,
+      "obrigatoria": true,
+      "prereq": [],
+      "regras_especiais": [],
+      "prereq_condicionais": [],
+      "dependentes": []
+    }
+  },
+  "arestas_dependencia": [
+    {
+      "from": "gsi9101nf",
+      "to": "gsi9201nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9102nf",
+      "to": "gsi9202nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9106nf",
+      "to": "gsi9204nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9104nf",
+      "to": "gsi9203nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9107nf",
+      "to": "gsi9205nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9201nf",
+      "to": "gsis9301nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9202nf",
+      "to": "gsi9302nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9204nf",
+      "to": "gs9305nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9205nf",
+      "to": "gsi9506nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9201nf",
+      "to": "gsi9303nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual"
+    },
+    {
+      "from": "gsis9301nf",
+      "to": "gsi9401nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9302nf",
+      "to": "gsi9401nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9302nf",
+      "to": "gsi9403nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual"
+    },
+    {
+      "from": "gsi9303nf",
+      "to": "gsi9403nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual"
+    },
+    {
+      "from": "gs9305nf",
+      "to": "gsi9406nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9406nf",
+      "to": "gsi9407nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9203nf",
+      "to": "gsi9404nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9203nf",
+      "to": "gsi9304nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9303nf",
+      "to": "gsi9402nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9105nf",
+      "to": "gsi9402nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual_linha_longa"
+    },
+    {
+      "from": "gsi9401nf",
+      "to": "gsi9501nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9403nf",
+      "to": "gsi9502nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9304nf",
+      "to": "gsi9405nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9406nf",
+      "to": "gsi9405nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual"
+    },
+    {
+      "from": "gsi9407nf",
+      "to": "gsi9505nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9404nf",
+      "to": "gsi9503nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9205nf",
+      "to": "gsi9704nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9403nf",
+      "to": "gsi9601nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual_linha_longa"
+    },
+    {
+      "from": "gsi9303nf",
+      "to": "gsi9601nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual_linha_longa"
+    },
+    {
+      "from": "gsi9502nf",
+      "to": "gsi9602nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9503nf",
+      "to": "gsi9504nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9405nf",
+      "to": "gsi9504nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual"
+    },
+    {
+      "from": "gsi9604nf",
+      "to": "gsi9702nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual"
+    },
+    {
+      "from": "gsi9604nf",
+      "to": "gsi9603nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual"
+    },
+    {
+      "from": "gsi9504nf",
+      "to": "gsi9603nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual"
+    },
+    {
+      "from": "gsi9605nf",
+      "to": "gsi9603nf",
+      "tipo": "pre_requisito",
+      "confidence": "media_visual"
+    },
+    {
+      "from": "gsi9701nf",
+      "to": "gsi9801nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    },
+    {
+      "from": "gsi9706nf",
+      "to": "gsi9804nf",
+      "tipo": "pre_requisito",
+      "confidence": "alta_visual"
+    }
+  ],
+  "ordem_sugerida_base": [
+    "gsi9102nf",
+    "gsi9101nf",
+    "gsi9107nf",
+    "gsi9106nf",
+    "gsi9103nf",
+    "gsi9104nf",
+    "gsi9105nf",
+    "gsi9205nf",
+    "gsi9203nf",
+    "gsi9202nf",
+    "gsi9206nf",
+    "gsi9204nf",
+    "gsi9201nf",
+    "gsi9303nf",
+    "gs9305nf",
+    "gsi9302nf",
+    "gsis9301nf",
+    "gsi9506nf",
+    "gsi9407nf",
+    "gsi9402nf",
+    "gsi9304nf",
+    "gsi9406nf",
+    "gsi9404nf",
+    "gsi9401nf",
+    "gsi9403nf",
+    "gsi9502nf",
+    "gsi9505nf",
+    "optativa_1",
+    "gsi9704nf",
+    "gsi9501nf",
+    "gsi9405nf",
+    "gsi9503nf",
+    "gsi9605nf",
+    "gsi9601nf",
+    "gsi9604nf",
+    "gsi9602nf",
+    "gsi9504nf",
+    "gsi9701nf",
+    "gsi9702nf",
+    "optativa_2",
+    "gsi9706nf",
+    "gsi9603nf",
+    "gsi9703nf",
+    "gsi9705nf",
+    "gsi9802nf",
+    "gsi9801nf",
+    "gsi9803nf",
+    "optativa_3",
+    "optativa_4",
+    "gsi9804nf"
+  ],
+  "estatisticas": {
+    "total_disciplinas": 50,
+    "total_arestas_dependencia": 39,
+    "total_obrigatorias": 46,
+    "total_optativas_no_fluxograma": 4
+  }
+}
